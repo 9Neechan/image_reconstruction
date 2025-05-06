@@ -243,7 +243,7 @@ class Inpainter():
             # sourcePatchULList: list whose elements is possible to be the UpperLeft of an patch to reference.
             for y in range(height - pHeight):
                 for x in range(width - pWidth):
-                    if convolvedMat[y, x] == area*0.95: # !!!!!!!!!
+                    if convolvedMat[y, x] == area: # !!!!!!!!! 
                         self.sourcePatchULList.append((y, x))
 
         countedNum = 0
